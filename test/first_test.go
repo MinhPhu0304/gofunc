@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/MinhPhu0304/gofunc"
+	gofunc "github.com/MinhPhu0304/go-func"
 )
 
 func TestFirst(t *testing.T) {
