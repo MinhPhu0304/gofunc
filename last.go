@@ -9,5 +9,5 @@ func Last(input interface{}) interface{} {
 	}
 	result := reflect.ValueOf(input)
 
-	return result.Index(result.Len() - 1)
+	return result.Index(result.Len() - 1).Interface()
 }

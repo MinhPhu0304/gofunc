@@ -7,6 +7,6 @@ func First(input interface{}) interface{} {
 	if reflect.ValueOf(input).Kind() != reflect.Array {
 		return nil
 	}
-	result := reflect.ValueOf(input).Index(0)
+	result := reflect.ValueOf(input).Index(0).Interface()
 	return result
 }
