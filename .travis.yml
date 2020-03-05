@@ -1,3 +1,3 @@
 language: go
 
-script: go test -v ./test/
+script: export GO111MODULE="on" && go test -v ./test/
