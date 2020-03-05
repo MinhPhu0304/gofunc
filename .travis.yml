@@ -1,3 +1,6 @@
 language: go
 
-script: export GO111MODULE="on" && go test -v ./test/
+go: 
+  - "1.13"
+
+script: env GO111MODULE=on go test -v ./test/
