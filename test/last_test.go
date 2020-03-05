@@ -15,3 +15,31 @@ func TestLast(t *testing.T) {
 		t.Errorf("Failed Test ")
 	}
 }
+
+func TestLastWithEmptyIntegerArray(t *testing.T) {
+	var input [5]int
+	result := gofunc.Last(input)
+
+	if result != 0 {
+		t.Errorf("Failed Test ")
+	}
+}
+
+func TestLastWithEmptyStringArray(t *testing.T) {
+	var input [5]string
+	result := gofunc.Last(input)
+
+	if result != "" {
+		t.Errorf("Failed Test ")
+	}
+}
+
+func TestLastWithWrongDataType(t *testing.T) {
+	input := 3
+
+	result := gofunc.Last(input)
+
+	if result != nil {
+		t.Errorf("Failed Test ")
+	}
+}
