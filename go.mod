@@ -1,3 +1,3 @@
-module github.com/MinhPhu0304/go-functional
+module github.com/MinhPhu0304/gofunc
 
 go 1.13
