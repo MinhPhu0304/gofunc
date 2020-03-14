@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	gofunc "github.com/MinhPhu0304/go-func"
+	gofunc "github.com/MinhPhu0304/gofunc"
 )
 
 func TestAddInt(t *testing.T) {
