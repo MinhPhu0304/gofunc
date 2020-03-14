@@ -1,7 +1,6 @@
 package test
 
 import (
-	"fmt"
 	"testing"
 
 	gofunc "github.com/MinhPhu0304/go-func"
@@ -38,9 +37,7 @@ func TestAddStringMultiParams(t *testing.T) {
 	input := "Hello"
 	secondInpt := "world"
 	result := gofunc.AddString(input, secondInpt)
-	fmt.Println(result)
 	expected := input + " " + secondInpt
-	fmt.Println(expected)
 	if result != expected {
 		t.Errorf("Add string function does not give expected result")
 	}
