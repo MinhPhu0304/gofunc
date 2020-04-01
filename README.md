@@ -31,6 +31,21 @@ Example:
       gofunc.AddString(input, "world") // Expected: Hello world
     }
   ```
+- ## ```All```:  Return true if all elements of the list match the predicate
+Example: 
+```go
+    import (
+      gofunc "https://github.com/MinhPhu0304/gofunc"
+    )
+
+    func main () {
+      input := []int{3,3,3}
+      input2 := []string{"hey","hey"}
+      checkAllElementIs3 := gofunc.All(3)
+      checkAllElementIs3(input) // Return true
+      checkAllElementIs3(input2) // Return false
+    }
+  ```
 - ## ```First```:  Get the first element of any array type
 Example: 
 ```go
@@ -95,3 +110,4 @@ Example:
       name := gofunc.Prop("Name", test) // Return "test"
     }
   ```
+
