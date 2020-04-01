@@ -8,7 +8,7 @@ import (
 
 func TestAllReturnTrue(t *testing.T) {
 	allEqual3 := gofunc.All(3)
-	input := []string{3, 3, 3}
+	input := []int{3, 3, 3}
 	actual := allEqual3(input)
 	expected := true
 
